@@ -20,3 +20,9 @@ jobs:
 
     - name: Running the maven test
       run: mvn clean install
+
+    - name: Upload Cucumber Report
+      uses: actions/upload-artifact@v4
+      with:
+        name: cucumber-report
+        path: target/cucumber-html-reports
