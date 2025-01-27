@@ -16,4 +16,7 @@ jobs:
         java-version: 19.0.2
         
     - name: listing the files of checkout
-      run: ls -ltr
+      run: ls -ltR
+
+    - name: Running the maven test
+      run: mvn clean install
