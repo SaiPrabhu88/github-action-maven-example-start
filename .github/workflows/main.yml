@@ -27,3 +27,9 @@ jobs:
 
     - name: creating the staging directory and copying the build file
       run: mkdir staging && cp target/*jar-with-dependencies.jar staging
+
+    - name: Upload the artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: upload-artifacts
+        path: staging
