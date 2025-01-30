@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - name: Set up JDK 19
       uses: actions/setup-java@v1
       with:
@@ -21,9 +21,7 @@ jobs:
     - name: Running the maven test
       run: |
         mvn -B package --file pom.xml
-    
-    - name: Listing the files post build
-      run: ls -ltR
+        ls -ltR
 
     - name: creating the staging directory and copying the build file
       run: mkdir staging && cp target/*jar-with-dependencies.jar staging
