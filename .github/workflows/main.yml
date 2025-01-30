@@ -1,4 +1,5 @@
-name: TestX CI/CD
+# checking for the Github actions for the test case 1
+name: Test-case1
 
 on:
   workflow_dispatch:
