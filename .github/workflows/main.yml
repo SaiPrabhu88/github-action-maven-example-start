@@ -1,7 +1,8 @@
 name: TestX CI/CD
 
 on:
-  workflow_dispatch
+  push:
+    branche: [test]
 
 jobs:
   build_and_test:
