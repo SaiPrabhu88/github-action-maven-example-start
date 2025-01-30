@@ -1,7 +1,19 @@
 name: TestX CI/CD
 
 on:
-  workflow_dispatch
+  workflow_dispatch:
+    inputs:
+      test_scope:
+        description: 'Choose test scope (component/full-page)'
+        required: true
+        default: 'component'
+        type: choice
+        options:
+          - S3
+      component_name:
+        description: 'Component Name (Leave empty for full-page test)'
+        required: false
+        type: string
 
 jobs:
   build_and_test:
