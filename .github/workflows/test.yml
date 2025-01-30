@@ -1,0 +1,10 @@
+name: Test1 Workflow
+on:
+  workflow_dispatch:
+
+jobs:
+  test1-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Execute Test1 Workflow
+        run: echo "Running test1.yml workflow (manual trigger only)"
