@@ -10,7 +10,7 @@ on:
         default: 'component'
         type: choice
         options:
-          - S3
+          - S2
       component_name:
         description: 'Component Name (Leave empty for full-page test)'
         required: false
