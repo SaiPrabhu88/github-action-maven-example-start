@@ -1,20 +1,13 @@
 # checking for the Github actions for the test case 1
-name: Test-case1
+name: Test-case2
 
 on:
   workflow_dispatch:
     inputs:
-      test_scope:
-        description: 'Choose test scope (component/full-page)'
+      branch:
+        description: 'Branch to run the workflow on'
         required: true
-        default: 'component'
-        type: choice
-        options:
-          - S2
-      component_name:
-        description: 'Component Name (Leave empty for full-page test)'
-        required: false
-        type: string
+        default: 'test'
 
 jobs:
   build_and_test:
