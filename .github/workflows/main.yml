@@ -3,6 +3,8 @@ name: TestX CI/CD
 on:
   push:
     branche: [test]
+  
+  workflow_dispatch:
 
 jobs:
   build_and_test:
