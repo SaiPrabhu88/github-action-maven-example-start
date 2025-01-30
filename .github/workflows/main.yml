@@ -21,6 +21,9 @@ jobs:
     - name: Running the maven test
       run: |
         mvn -B package --file pom.xml
+    
+    - name: Listing the files and Directories
+      run: |
         ls -ltR
 
     - name: creating the staging directory and copying the build file
