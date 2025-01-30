@@ -14,8 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Trigger workflow on another branch
-        run: gh workflow run maven-publish.yml-R SaiPrabhu88
-github-action-maven-example-start -b test-case2
+        run: gh workflow run main.yml-R SaiPrabhu88
+github-action-maven-example-start -b test-case1
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
