@@ -1,0 +1,15 @@
+name: Test2 Workflow
+on:
+  push:
+    branches:
+      - test2
+  pull_request:
+    branches:
+      - test2
+
+jobs:
+  test2-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Execute Test2 Workflow
+        run: echo "Running test2.yml workflow (push & pull request)"
