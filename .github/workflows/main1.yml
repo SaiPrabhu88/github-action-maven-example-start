@@ -11,3 +11,6 @@ jobs:
     steps:
       - name: Execute Main Workflow-1
         run: echo "Running main.yml workflow"
+
+      - name: Execute the Test command
+        run: echo "Hello Main1.yml file"
