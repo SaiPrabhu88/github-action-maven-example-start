@@ -9,5 +9,5 @@ jobs:
   main-job:
     runs-on: ubuntu-latest
     steps:
-      - name: Execute Main Workflow
+      - name: Execute Main Workflow-1
         run: echo "Running main.yml workflow"
