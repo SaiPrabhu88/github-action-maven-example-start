@@ -1,0 +1,13 @@
+name: Main Workflow-1
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  main-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Execute Main Workflow
+        run: echo "Running main.yml workflow"
